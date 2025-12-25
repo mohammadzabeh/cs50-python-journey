@@ -1,0 +1,32 @@
+# Creating a profile creator
+#========================================================
+print("=" * 50)
+print(f"{'SMART PROFILE CREATOR':^50}")
+print("=" * 50)
+#========================================================
+first_name = str(input("first name: "))
+first_name = first_name.strip().title()
+last_name = str(input("last name: "))
+last_name = last_name.strip().title()
+age = int(input("Age: "))  
+birth_year = 2025 - age
+Email = str(input("Email: "))
+Email = Email.strip().lower()
+city = str(input("city: "))
+city = city.strip().title()
+profession = str(input("profession: "))
+profession = profession.strip().title()
+#========================================================
+print("=" * 50)
+print(f"{'USER PROFILE':^50}")
+print("=" * 50)
+print(f"{'First Name:':20} {first_name}")
+print(f"{'Last Name:':20} {last_name}")
+print(f"{'Age:':20} {age}")
+print(f"{'Birth year:':20} {birth_year}")
+print(f"{'Email:':20} {Email}")
+print(f"{'City:':20} {city}")
+print(f"{'Profession:':20} {profession}")
+print("=" * 50)
+print(f"{'Profile saved successfully!':^50}")
+print("=" * 50)
