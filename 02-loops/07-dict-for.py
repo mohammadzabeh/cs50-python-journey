@@ -3,7 +3,7 @@ students = {"Alex": "Harvard", # we press Enter after
             "David": "Harvard",#    each line for syntax clarity.
             "Sam": "Cambridge", 
             "Simon": "Babbel"}
-# here in this example Alex in a key and the value
+# here in this example Alex is a key and the value
 #   associated with is Harward.
 print(students["Alex"])  
 # here we get Harward.
