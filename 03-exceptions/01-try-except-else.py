@@ -5,8 +5,9 @@ Errors: 1. SyntaxError: it is in your code and you have to fix it.
 
 """
 
-# you try something.
+
 def version_1():
+    # you try something.
     try:          
         x  = int(input("what is x? "))
         print(f"x is {x}")
@@ -19,11 +20,11 @@ def version_1():
 
 # version 2
 
-def version_2(): # this code can get errors.
-    try:          
+def version_2(): 
+    try: 
+        # this code can get errors         
         x  = int(input("what is x? "))
-        
-    # anything unexpected happen do this.
+    # anything unexpected happen, do this.
     except ValueError:
         print("x is not an integer.")
     # if the user types any thing except an int,
@@ -42,4 +43,28 @@ def version_3(): # this one is the standard code.
     else:
         print(f"x is {x}")
 
-version_3()
+
+def version_4(): # this way it doesn't break out of the loop
+    while True:  # until x is defined
+        try:          
+            x  = int(input("what is x? "))   
+        except ValueError:
+            print("x is not an integer.")
+        else:
+            # print could be here too, no difference in outcome.
+            break
+            
+    print(f"x is {x}")
+
+
+def version_5(): 
+    while True: # same code, more compact.
+        try:          
+            x  = int(input("what is x? "))   
+            break
+        except ValueError:
+            print("x is not an integer.")
+
+    print(f"x is {x}")
+
+version_5()   
